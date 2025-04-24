@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+#root {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #0e6cc4;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+
+/*waves****************************/
+
+
+.box {
+  position: fixed;
+  top: 0;
+  transform: rotate(80deg);
+  left: 0;
+}
+.wave {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: .4;
+  position: absolute;
+  top: 3%;
+  left: 10%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  width: 1500px;
+  height: 1300px;
+  margin-left: -150px;
+  margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 60%;
+  animation: drift 7000ms infinite linear,
+  gradient 6s ease infinite;
+  
+}
+
+.wave.-three {
+  animation: drift 7500ms infinite linear, gradient 6s ease infinite;
+  position: fixed;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+}
+
+.wave.-two {
+  animation: drift 3000ms infinite linear, gradient 6s ease infinite;
+  opacity: .1;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  position: fixed;
+}
+.wave {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: .4;
+  position: absolute;
+  top: 3%;
+  left: 10%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  width: 1500px;
+  height: 1300px;
+  margin-left: -150px;
+  margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 60%;
+  animation: drift 7000ms infinite linear,
+  gradient 6s ease infinite;
+  
+}
+
+.box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+
+/*LOADING SPACE*/
+
+.contain {
+  animation-delay: 4s;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  background: #25a7d7;
+  background: -webkit-linear-gradient(#25a7d7, #2962FF);
+  background: linear-gradient(#25a7d7, #25a7d7);
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 5px;
+}
+
+/*Animation*/
+.icon:nth-child(2) img {-webkit-animation-delay: 0.2s;animation-delay: 0.2s}
+.icon:nth-child(3) img {-webkit-animation-delay: 0.3s;animation-delay: 0.3s}
+.icon:nth-child(4) img {-webkit-animation-delay: 0.4s;animation-delay: 0.4s}
+
+.icon img {
+  -webkit-animation: anim 2s ease infinite;
+  animation: anim 2s ease infinite;
+  -webkit-transform: scale(0,0) rotateZ(180deg);
+  transform: scale(0,0) rotateZ(180deg);
+}
+
+@-webkit-keyframes anim{
+  0% {
+    -webkit-transform: scale(0,0) rotateZ(-90deg);
+    transform: scale(0,0) rotateZ(-90deg);opacity:0
+  }
+  30% {
+    -webkit-transform: scale(1,1) rotateZ(0deg);
+    transform: scale(1,1) rotateZ(0deg);opacity:1
+  }
+  50% {
+    -webkit-transform: scale(1,1) rotateZ(0deg);
+    transform: scale(1,1) rotateZ(0deg);opacity:1
+  }
+  80% {
+    -webkit-transform: scale(0,0) rotateZ(90deg);
+    transform: scale(0,0) rotateZ(90deg);opacity:0
+  }
+}
+
+@keyframes anim{
+  0% {
+    -webkit-transform: scale(0,0) rotateZ(-90deg);
+    transform: scale(0,0) rotateZ(-90deg);opacity:0
+  }
+  30% {
+    -webkit-transform: scale(1,1) rotateZ(0deg);transform: scale(1,1) rotateZ(0deg);opacity:1
+  }
+  50% {
+    -webkit-transform: scale(1,1) rotateZ(0deg);
+    transform: scale(1,1) rotateZ(0deg);opacity:1
+  }
+  80% {
+    -webkit-transform: scale(0,0) rotateZ(90deg);
+    transform: scale(0,0) rotateZ(90deg);opacity:0
+  }
+}
+
+.home-main{
+  width: auto;
+  gap: 30px;
+  height: -webkit-fill-available;
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: left;
+  justify-content: center;
+  color: white;
+}
+.home-main_info{
+  max-width: 550px;
+  max-height: max-content;
+  margin: auto 0;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  padding: 1rem;
+}
+
+.josefin-sans{
+  font-family: "Josefin Sans", sans-serif;
+}
+.montserrat-sans{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+h1.josefin-sans{
+  font-size: 3rem;
+}
+h2.josefin-sans{
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #0f0642, #d40060, #27049a, #0f0642);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Para soporte adicional */
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1rem;
+}
+h4.montserrat-sans{
+  margin: 0px 0px 2rem 0px;
+  letter-spacing: 0.5px;
+}
+.socialM{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+.socialM svg{
+  padding: 8px;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+}
+.socialM .upwork-icon{
+  background-color: #108a00;
+
+}
+.socialM .linkedin-icon{
+  background-color: #0a66c2;
+}
+.socialM .mail-icon{
+  background-color: #ea4335;
+}
+.socialM .github-icon{
+  background-color: black;
+}
+.swiper-pagination-bullet {
+  width: auto;
+  height: auto;
+  text-align: center;
+  line-height: 20px;
+  font-size: .9rem;
+  color: #fff;
+  opacity: 1;
+  background: rgba(43, 43, 43, 0.2);
+  border-radius: 30px;
+  padding: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #27049a;
+}
