@@ -1,17 +1,24 @@
+
 .card-slider {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+justify-content: center;
   align-items: center;
   margin-top: 60px;
   position: relative;
   height: 400px;
+  margin: 60px;
+  gap: 80px;
 }
 
 .card-stack {
   position: relative;
-  width: 300px;
-  height: 400px;
+  width: 360px;
+  height: 430px;
   perspective: 1000px;
+}
+.card-info{
+  width: 500px;
 }
 
 .card {
@@ -33,19 +40,42 @@
 .controls {
   margin-top: 20px;
 }
-
-.controls button {
-  background-color: #333;
+.button-next{
+  position: absolute;
+  top: 45%;
+  right: -6%;
+  z-index: 10;
+  font-size: 2.5rem;
   color: white;
-  border: none;
-  padding: 10px 20px;
-  margin: 0 8px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: transform 0.2s;
+  stroke: #27049a;
+  stroke-width: 25px;     
 }
-
+.button-prev{
+  position: absolute;
+  top: 45%;
+  left:-5.7%;
+  z-index: 10;
+  font-size: 2.5rem;
+  color: white;
+  stroke-width: 25px;
+  stroke: #27049a;
+}
 .controls button:hover {
   transform: scale(1.05);
+}
+.tecnologies ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0px;
+  gap: 10px;
+}
+.tecnologies ul li{
+  opacity: 1;
+  background: white;
+  border-radius: 30px;
+  color: black;
+  border-radius: 20px;
+  padding: 10px 12px;
+  font-size: 1rem;
 }

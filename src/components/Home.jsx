@@ -1,6 +1,6 @@
 import React from 'react'
 import img from '../images/maikerHand-BaFsx1h2.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Importa el ícono que quieres usar
 import { faLinkedinIn, faUpwork, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';

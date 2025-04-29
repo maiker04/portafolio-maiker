@@ -12,6 +12,7 @@ import './styles.css';
 import { Mousewheel, Pagination, Navigation } from 'swiper/modules';
 import Home from './components/Home';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 export default function App() {
   const slideTitles = ['Skills', 'About Me', 'Home', 'Projects', 'Contact'];
@@ -33,16 +34,15 @@ export default function App() {
         slidesPerView={1}
         loop={true}
         initialSlide={2}
-        navigation={true}
         pagination={pagination}
-        modules={[Mousewheel, Pagination, Navigation]}
+        modules={[Mousewheel, Pagination]}
         className="mySwiper"
       >
         <SwiperSlide>Skills</SwiperSlide>
         <SwiperSlide>about me</SwiperSlide>
         <SwiperSlide><Home/></SwiperSlide>
         <SwiperSlide><Projects/></SwiperSlide>
-        <SwiperSlide>contact</SwiperSlide>
+        <SwiperSlide><Contact/></SwiperSlide>
       </Swiper>
       <div class='box2'>
         <div class='wave2 -one'></div>

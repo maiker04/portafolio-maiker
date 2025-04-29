@@ -1,0 +1,40 @@
+.contact-main{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.contact-box{
+    max-width: 400px;
+    max-height: max-content;
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    padding: 1rem 2rem;
+}
+.contact-box div, .contact-box div input, .contact-box label{
+    font-family: "Montserrat", sans-serif !important;
+}
+.contact-box label{
+    font-weight: 600;
+}
+.contact-box div{
+    background: rgba(0, 0, 0, 0.02) !important;
+}
+.MuiInputLabel-root.Mui-focused {
+    color: #27049a !important; 
+}
+.MuiFilledInput-root.Mui-focused:after {
+    border-bottom: 2px solid #27049a !important;
+}
+  
+.contact-button{
+    padding: 15px !important;
+    background-color: #27049a !important;
+    font-family: "Montserrat", sans-serif !important;
+    border-radius: 30px !important;
+}
