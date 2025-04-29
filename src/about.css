@@ -1,0 +1,12 @@
+.about-main{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    margin: 60px auto;
+    color: white;
+    max-width: 900px;
+}
+.about-experience{
+    text-align: start;
+    font-family: "Montserrat", sans-serif !important;
+    color: white;
+}
