@@ -235,6 +235,11 @@ body{
   padding: 1rem;
 }
 
+.dev {
+  display: flex;
+  max-width: 50%;
+}
+
 .josefin-sans{
   font-family: "Josefin Sans", sans-serif;
 }
@@ -300,4 +305,19 @@ h4.montserrat-sans{
 .swiper-pagination-bullet-active {
   color: #fff;
   background: #27049a;
+}
+
+@media (max-width: 1024px) {
+  .dev {
+    display: none;
+  }
+  h1.josefin-sans{
+    font-size: 2.5rem;
+  }
+  h2.josefin-sans{
+    font-size: 2rem;
+  }
+  h4.montserrat-sans{
+    font-size: 14px;
+  }
 }

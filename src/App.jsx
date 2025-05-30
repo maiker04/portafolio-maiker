@@ -14,6 +14,7 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import About from './components/About';
+import Skills from './components/Skills';
 
 export default function App() {
   const slideTitles = ['Skills', 'About Me', 'Home', 'Projects', 'Contact'];
@@ -39,7 +40,7 @@ export default function App() {
         modules={[Mousewheel, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>Skills</SwiperSlide>
+        <SwiperSlide><Skills/></SwiperSlide>
         <SwiperSlide><About/></SwiperSlide>
         <SwiperSlide><Home/></SwiperSlide>
         <SwiperSlide><Projects/></SwiperSlide>

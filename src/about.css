@@ -4,9 +4,22 @@
     margin: 60px auto;
     color: white;
     max-width: 900px;
+    font-size: 18px;
 }
 .about-experience{
     text-align: start;
     font-family: "Montserrat", sans-serif !important;
     color: white;
+}
+
+@media (max-width: 1024px) {
+    .about-main{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-main{
+        font-size: 13.5px;
+    }
 }

@@ -57,7 +57,7 @@ export default function Projects() {
             <FontAwesomeIcon icon={faCircleChevronRight} onClick={next} className='button-next'/>
           </div>
         </div>
-        <div className='home-main_info'>
+        <div className='projects-main_info'>
           <h1 className='josefin-sans'>{cards[activeIndex].name}</h1>
           <h4 className='montserrat-sans'>{cards[activeIndex].desc}</h4>
           <div className='tecnologies'>
@@ -74,7 +74,32 @@ export default function Projects() {
             )}
           </div>
         </div>
-        {/* <div className='card-info'>{cards[activeIndex].text}</div> */}
+
+        {/* Mobile */}
+        <div className="card-stack--mobile">
+          {cards.map((card, index) => {
+            const offset = index - activeIndex;
+            const isActive = index === activeIndex;
+
+            return (
+              <div
+                key={card.id}
+                className={`card ${isActive ? 'active' : ''}`}
+                style={{
+                  transform: `translateX(${offset * 30}px) rotateY(${offset * -10}deg) scale(${1 - Math.abs(offset) * 0.05})`,
+                  zIndex: cards.length - Math.abs(offset),
+                  opacity: Math.abs(offset) > 2 ? 0 : 1,
+                }}
+              >
+                <img src={card.img} alt="" style={{borderRadius: '20px', objectFit: 'cover', objectPosition: 'top'}}/>
+              </div>
+            );
+          })}
+          <div className="controls">
+            <FontAwesomeIcon icon={faCircleChevronLeft} onClick={prev} className='button-prev'/>
+            <FontAwesomeIcon icon={faCircleChevronRight} onClick={next} className='button-next'/>
+          </div>
+        </div>
       </div>
   );
 }

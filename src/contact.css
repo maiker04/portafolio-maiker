@@ -38,3 +38,14 @@
     font-family: "Montserrat", sans-serif !important;
     border-radius: 30px !important;
 }
+
+@media (max-width: 768px) {
+  .contact-main{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+}
